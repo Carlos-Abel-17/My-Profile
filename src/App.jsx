@@ -8,7 +8,7 @@ import JScrip from './img/JavaScript.png'
 import material from './img/material.svg'
 import react from './img/react.png'
 import tailwind from './img/Tailwind.png'
-
+import vites from './img/vite.png'
 import sql from './img/mysql.png'
 import node from './img/nodelogo.png'
 import postgres from './img/postgresql.png'
@@ -26,7 +26,7 @@ function App() {
     imagenes:[JScrip,sql,node,postgres,prisma,seque,typescript],
     nombres:['JavaScript','Mysql','Node.js','Postgresql','Prisma','Sequelize','Typescript']}
   const fotoFront={
-    imagenes:[Bootstap,JScrip,material,react,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
+    imagenes:[Bootstap,JScrip,material,react,vites,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
   }
  
 

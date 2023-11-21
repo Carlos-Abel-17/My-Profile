@@ -22,6 +22,10 @@ import github from './img/github.svg'
 import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
 import fb from './img/fb.svg'
+import descarga from './img/descarga.svg'
+
+import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
+
 function App() {
   const fotoback={
     imagenes:[JScrip,sql,node,postgres,prisma,seque,typescript],
@@ -29,6 +33,15 @@ function App() {
   const fotoFront={
     imagenes:[Bootstap,JScrip,material,react,Vite,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
   }
+  const descargarCV = () => {
+    // Lógica para descargar el archivo CV
+    const link = document.createElement('a');
+    link.href = cvPDF; // Reemplaza con la ruta correcta a tu archivo CV
+    link.download = 'Mi_CV_Abel_Aguado.pdf'; // Puedes establecer el nombre de descarga
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
  
 
   return (
@@ -63,8 +76,16 @@ function App() {
           <p className='midescripcion'>Hello! 👋 I'm Carlos Abel Aguado Ramos, a passionate coder and web development lover. Currently, I'm focused on learning new technologies to improve my work in programming and learn new programming languages such as typeScript that significantly reduces errors in the back end. </p>
         </div>
       </div>
+      <div >
+      <button className="button" onClick={descargarCV} type="button">
+  <span className="button__text">CV.pdf</span>
+  <span className="button__icon">
+    <img src={descarga} alt="" className='svg'/>
+  </span>
+</button>
+      </div>
         </div>
-
+         
         <div id='skills' className='sectionSkill'>
           <img src={ola} alt="" className='olas' />
           <div>

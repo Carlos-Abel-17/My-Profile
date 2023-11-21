@@ -1,0 +1,309 @@
+
+body {
+    margin: 0px;
+    padding: 0;
+
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+ 
+  .navInter{
+   display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    color: white;
+    font-family: sans-serif;
+  }
+  .title{
+    font-size: larger;
+  }
+  .tituloPresentacion{
+    font-family: sans-serif;
+  }
+ #imagenDeFondo{
+
+  background-image: url('./img-progra.jpg');
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: 150% ;
+ }
+ .overlay {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.681); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2em;
+}
+.textoPresen{
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+}
+#link{
+  margin: 4% 2% 4% 2% ;
+  text-decoration: none;
+  color: #086968;
+  font-size: medium;
+  font-weight: 900;
+ 
+}
+.yo{
+  width: 30%;
+  height: 50vh;
+  border-radius: 1em;
+  box-shadow: 4px 4px 6px;
+  margin-left: 4em;
+}
+.sectionAbout{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+
+}
+.titleAbout{
+ font-family: sans-serif;
+ font-size: x-larger;
+ border-bottom: solid;
+ color: #086968;
+}
+.miFoto{
+  width: 20%;
+  height: auto;
+  border:solid
+}
+.descripcion{
+
+  width:50%;
+  padding: 1em;
+}
+.midescripcion{
+  font-family: sans-serif;
+  font-size: larger;
+}
+.sectionSkill{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(33, 47, 73);
+  width: 100%;
+  margin-top: 1em;
+}
+.olas{
+  width: 100%;
+  
+}
+.titleSkill{
+  font-family: sans-serif;
+  font-size: x-larger;
+  border-bottom: solid;
+  color: rgb(255, 157, 0);
+}
+.skillFront{
+  display: flex;
+}
+.frontend{
+  font-family: sans-serif;
+  font-size: x-larger;
+  border-bottom: solid;
+  color: #fff;
+  padding-left: 1em;
+}
+.frontImagen{
+  width: 30%;
+}
+.backImagen{
+  width: 30%;
+}
+.imagenesBack{
+  width: 10%;
+}
+.Backend{
+  font-family: sans-serif;
+  font-size: x-larger;
+  border-bottom: solid;
+  color: #fff;
+  padding-left: 1em;
+}
+.containerimgB{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.skillBack{
+  display: flex;
+}
+.imagenesFront{
+  max-width: 5em;
+}
+.containerimgF{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.imagenConNombre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  background-color: rgb(122, 122, 247);
+  padding: 0.5em;
+  border-radius: 1em;
+  min-width: 6em;
+  min-height: 8em;
+  
+}
+.imagenConNombre:hover{
+  transform: translateY(-0.5em); 
+  transition: transform 0.3s ease;
+}
+.nombreImagen{
+  font-family: sans-serif;
+}
+.sectionContact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titlecontact{
+  font-family: sans-serif;
+  font-size: x-larger;
+  border-bottom: solid;
+  color: rgb(255, 157, 0);
+}
+.card {
+  display: flex;
+  height: 50px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 3em;
+  padding: 1em;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background: #c0c0c0;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #58f262;
+  animation: bounce_613 0.4s linear;
+}
+
+
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .yo {
+    width: 40%; 
+    margin-left: 1em;
+    height: 20vh;
+  }
+  .overlay{
+    height: 46vh;
+  }
+  .tituloPresentacion{
+    font-size: 0.9em;
+  }
+  #imagenDeFondo{
+    height: 46vh;
+  }
+  .textoPresen{
+    font-size: 0.4em;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .descripcion{
+    margin-right: 1em;
+  }
+  .titleAbout{
+    font-family: sans-serif;
+    font-size: medium;
+    border-bottom: solid;
+    color: #086968;
+   }
+   .midescripcion{
+    font-family: sans-serif;
+    font-size: small;
+    
+   }
+  .skillBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }.skillFront{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frontImagen{
+    width: 90%;
+  }
+  .backImagen{
+    width: 90%;
+  }
+}

@@ -7,12 +7,11 @@ import Bootstap from './img/Bootstrap.png'
 import JScrip from './img/JavaScript.png'
 import material from './img/material.svg'
 import react from './img/react.png'
-import Vite from './img/Vite.png'
 import tailwind from './img/Tailwind.png'
-
+import vites from './img/vite.png'
 import sql from './img/mysql.png'
 import node from './img/nodelogo.png'
-import postgres from './img/postgresql.png'
+import postgres from './img/Postgresql.png'
 import prisma from './img/prisma.webp'
 import seque from './img/sequelize.png'
 import typescript from './img/typescript.png'
@@ -31,7 +30,7 @@ function App() {
     imagenes:[JScrip,sql,node,postgres,prisma,seque,typescript],
     nombres:['JavaScript','Mysql','Node.js','Postgresql','Prisma','Sequelize','Typescript']}
   const fotoFront={
-    imagenes:[Bootstap,JScrip,material,react,Vite,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
+    imagenes:[Bootstap,JScrip,material,react,vites,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
   }
   const descargarCV = () => {
     // Lógica para descargar el archivo CV

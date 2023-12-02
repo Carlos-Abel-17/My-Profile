@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     padding: 0;
-
+   background-color: #121113;
   }
   html{
     scroll-behavior: smooth;
@@ -11,9 +11,11 @@ body {
   .navInter{
    display: flex;
     align-items: center;
-    justify-content:space-evenly ;
+    justify-content: center;
     color: white;
     font-family: sans-serif;
+  
+   
   }
   .title{
     font-size: larger;
@@ -21,9 +23,12 @@ body {
   .tituloPresentacion{
     font-family: sans-serif;
   }
+  .DEv{
+    color: #278066;
+  }
  #imagenDeFondo{
 
-  background-image: url('./img-progra.jpg');
+  background-image: url('./fondoOS.avif');
   width: 100%;
   height: 80vh;
   background-repeat: no-repeat;
@@ -35,7 +40,7 @@ body {
   left: 0;
   width: 100%;
   height: 80vh;
-  background: rgba(0, 0, 0, 0.681); 
+  background: rgba(0, 0, 0, 0.738); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,16 +54,24 @@ body {
   text-align: center;
 }
 #link{
-  margin: 4% 2% 4% 2% ;
+  margin: 4% 6% 4% 6% ;
   text-decoration: none;
-  color: #086968;
+  color: white;
   font-size: medium;
   font-weight: 900;
  
 }
+.enlaces{
+  display: flex;
+  border: solid rgba(255, 255, 255, 0.276);
+  background-color: rgba(255, 255, 255, 0.266);
+  width: 20em;
+  border-radius: 2em;
+
+}
 .yo{
-  width: 30%;
-  height: 50vh;
+  width: 20%;
+  height: 30vh;
   border-radius: 1em;
   box-shadow: 4px 4px 6px;
   margin-left: 4em;
@@ -74,7 +87,7 @@ body {
  font-family: sans-serif;
  font-size: x-larger;
  border-bottom: solid;
- color: #086968;
+ color: white;
 }
 .miFoto{
   width: 20%;
@@ -83,12 +96,14 @@ body {
 }
 .descripcion{
 
-  width:50%;
-  padding: 1em;
+  width:100%;
+
 }
 .midescripcion{
   font-family: sans-serif;
   font-size: larger;
+  color: rgb(156, 156, 156);
+  padding: 0em 1em;
 }
 .sectionSkill{
   display: flex;
@@ -98,6 +113,7 @@ body {
   width: 100%;
   margin-top: 1em;
 }
+
 .olas{
   width: 100%;
   
@@ -106,7 +122,7 @@ body {
   font-family: sans-serif;
   font-size: x-larger;
   border-bottom: solid;
-  color: rgb(255, 157, 0);
+  color: white;
 }
 .skillFront{
   display: flex;
@@ -115,7 +131,7 @@ body {
   font-family: sans-serif;
   font-size: x-larger;
   border-bottom: solid;
-  color: #fff;
+  color: #c5c5c5;
   padding-left: 1em;
 }
 .frontImagen{
@@ -156,17 +172,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em;
+  margin: 0.5em;
   background-color: rgb(122, 122, 247);
-  padding: 0.5em;
   border-radius: 1em;
-  min-width: 6em;
-  min-height: 8em;
-  
+  padding: 0em 0.5em;
+  min-width: 4em;
+  min-height: 1em;
+  transition: transform 0.3s ease;
 }
 .imagenConNombre:hover{
   transform: translateY(-0.5em); 
-  transition: transform 0.3s ease;
+
 }
 .nombreImagen{
   font-family: sans-serif;
@@ -181,7 +197,7 @@ body {
   font-family: sans-serif;
   font-size: x-larger;
   border-bottom: solid;
-  color: rgb(255, 157, 0);
+  color: white;
 }
 .card {
   display: flex;
@@ -189,7 +205,7 @@ body {
   width: 300px;
   background-color: gray;
   border-radius: 3em;
-  padding: 1em;
+  padding: 1em ;
 }
 
 .card svg {
@@ -237,8 +253,6 @@ body {
   background-color: #58f262;
   animation: bounce_613 0.4s linear;
 }
-
-
 
 @keyframes bounce_613 {
   40% {
@@ -315,11 +329,15 @@ body {
 .button:active {
   border: 1px solid #146c54;
 }
+.t{
+ display: flex;
+ align-items: center;
+}
 @media (max-width: 768px) {
   .yo {
-    width: 40%; 
-    margin-left: 1em;
-    height: 20vh;
+    width: 35%; 
+    margin: 1em;
+    height: 15vh;
   }
   .overlay{
     height: 46vh;
@@ -335,18 +353,20 @@ body {
     font-family: sans-serif;
     text-align: center;
   }
-  .descripcion{
-    margin-right: 1em;
+  .olas{
+   width:100%;
+   top:0
   }
   .titleAbout{
     font-family: sans-serif;
     font-size: medium;
     border-bottom: solid;
-    color: #086968;
+    color: white;
    }
    .midescripcion{
     font-family: sans-serif;
     font-size: small;
+    color: #9c9c9c;
     
    }
   .skillBack{
@@ -355,13 +375,17 @@ body {
     align-items: center;
   }.skillFront{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+
   }
   .frontImagen{
     width: 90%;
   }
   .backImagen{
     width: 90%;
+  }
+  .t{
+   flex-direction: column;
   }
 }

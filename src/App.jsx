@@ -1,21 +1,8 @@
 import React from 'react';
 import './App.css';
 import photoPrefil from './perfiles.jpg';
-import front from './front.png'
-import back from './back.png'
-import Bootstap from './img/Bootstrap.png'
-import JScrip from './img/JavaScript.png'
-import material from './img/material.svg'
-import react from './img/react.png'
-import tailwind from './img/Tailwind.png'
-import vites from './img/vite.png'
-import sql from './img/mysql.png'
-import node from './img/nodelogo.png'
-import postgres from './img/Postgresql.png'
-import prisma from './img/prisma.webp'
-import seque from './img/sequelize.png'
-import typescript from './img/typescript.png'
 import ola from './img/waves.svg'
+import olass from './img/wavess.svg'
 
 import github from './img/github.svg'
 import linkedin from './img/linkedin.svg'
@@ -26,12 +13,9 @@ import descarga from './img/descarga.svg'
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
 
 function App() {
-  const fotoback={
-    imagenes:[JScrip,sql,node,postgres,prisma,seque,typescript],
-    nombres:['JavaScript','Mysql','Node.js','Postgresql','Prisma','Sequelize','Typescript']}
-  const fotoFront={
-    imagenes:[Bootstap,JScrip,material,react,vites,tailwind],nombres:['Bootstap','JavaScript','Material ui','React','Vite','Tailwindcss']
-  }
+  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','sql','mongoDB','mongoo']
+  const NFront=['Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
+  
   const descargarCV = () => {
     // Lógica para descargar el archivo CV
     const link = document.createElement('a');
@@ -44,13 +28,10 @@ function App() {
  
 
   return (
-    <div>
-       <div style={{ position: 'fixed', zIndex: '1', width: '100%', padding: '0.5em', backdropFilter: 'blur(12px)' }}>
+    <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+       <div style={{ borderRadius:'2em',position: 'fixed', zIndex: '1', width: '100%', padding: '0.5em' }}>
       <nav className={`nav`}>
         <div className='navInter'>
-          <div>
-            <h3 className={`title`}>My Profile</h3>
-          </div>
           <div className='enlaces'>
             <a href="#about"  id='link'>ABOUT</a>
             <a href="#skills" id='link'>SKILLS</a>
@@ -62,17 +43,25 @@ function App() {
 
       <div id='imagenDeFondo'>
         <div className='overlay'>
-          <h2 className='tituloPresentacion'>Developers Full Stack</h2>
+          <h2 className='tituloPresentacion'>Hello. i'm Abel
+          <br/>
+            <span className='DEv'>Developers Full Stack</span> </h2>
           <p className='textoPresen'>Hello, I am a full stack developer I have knowledge in frontend and backend. </p>
         </div>
       </div>
 
       <div id='about' className='sectionAbout'>
-        <div><h2 className='titleAbout'>ABOUT</h2></div>
-        <div style={{display:'flex',alignItems:'center'}}>
+        <div><h2 className='titleAbout'>ABOUT ME</h2></div>
+        <div className='t'>
         <img src={photoPrefil} alt="" className='yo'/>
         <div className='descripcion'>
-          <p className='midescripcion'>Hello! 👋 I'm Carlos Abel Aguado Ramos, a passionate coder and web development lover. Currently, I'm focused on learning new technologies to improve my work in programming and learn new programming languages such as typeScript that significantly reduces errors in the back end. </p>
+          <p className='midescripcion'>Hi👋! I'm Carlos Abel Aguado Ramos , a passionate full stack web developer and graduate of the I'm Henry bootcamp. I'm currently in the middle of my Systems Engineering degree, a journey that has provided me with a solid academic foundation.
+  <br/>
+  My main focus is programming, especially with frameworks(React,next,angular) , and I love bringing web pages to life with style libraries . My time at bootcamp has given me solid skills and a project-oriented mindset.
+<br/>
+In my portfolio, you'll find examples of my work, from individual to collaborative projects. I'm excited about web development and am always looking for opportunities to learn and grow in this exciting field.
+<br/>
+Welcome to my digital space! Here you can explore my journey as a developer and discover the creative solutions I've implemented in various projects. </p>
         </div>
       </div>
       <div >
@@ -90,39 +79,59 @@ function App() {
           <div>
         <h2 className='titleSkill'>SKILLS</h2>
           </div>
-          <div> 
-            <div>
-            <h3 className='frontend'>My Front end skills</h3>
-            <div className='skillFront'>
-              <img src={front} alt="" className='frontImagen' />
-             
-            <div  className='containerimgF'>
-            {fotoFront?.imagenes.map((imagen, index) => (
-    <div key={index} className='imagenConNombre'>
-      <img src={imagen} alt="" className='imagenesFront' />
-      <p className='nombreImagen'>{fotoFront?.nombres[index]}</p>
+          <div >
+              <h3 className='frontend' >My Front end skills</h3>
+            </div>
+            <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}> <span style={{color:'white',fontFamily:'sans-serif'}}>
+              Frameworks:
+            </span>
+            <br/>
+React: I developed dynamic and efficient applications using React, leveraging its focus on reusable components and efficient state management.
+
+React + Vite: I experimented with combining React and Vite to create modern applications with fast compile time and efficient development.
+
+Angular: My Angular experience includes building robust and scalable applications, leveraging its modular framework and powerful features.
+ <br/><br/>
+<span style={{color:'white',fontFamily:'sans-serif'}}>Styles:</span>
+<br/>
+Bootstrap: I've designed attractive and responsive interfaces using Bootstrap, leveraging its set of pre-built components and customizability.
+
+Material-UI: I've immersed myself in designing visually appealing applications with Material-UI, following the design principles of Material Design.
+
+Tailwind CSS: I experimented with Tailwind CSS to create highly customizable styles and optimize CSS file sizes, providing a faster loading experience.
+
+Next.js and UI: I used Next.js and its server-side rendering capabilities, along with UI libraries such as Chakra UI, to create modern and efficient web applications.</p>
+          <div className='skillFront'> 
+          {NFront?.map((u) => (
+    <div  className='imagenConNombre'>
+      <p className='nombreImagen'>{u}</p>
     </div>
   ))}
-            </div>
-            </div>
-            </div>
-            <div>
-              <h3 className='Backend' >My Back end skills</h3>
-            </div>
-           <div className='skillBack'>
-            <div className='containerimgB'>
-            {fotoback?.imagenes.map((imagen, index) => (
-    <div key={index} className='imagenConNombre'>
-      <img src={imagen} alt="" className='imagenesFront' />
-      <p className='nombreImagen'>{fotoback?.nombres[index]}</p>
-    </div>
-  ))}
-            </div>
-           <img src={back} alt=""   className='backImagen'/>
-           </div>
           </div>
+   <div>
+    <h3 className='frontend'>My Back skills</h3>
+   </div>
+     <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>
+      <span style={{color:'white',fontFamily:'sans-serif'}}>
+     Tecnologías y Frameworks:
+      </span>
+Node.js y Express: He desarrollado servidores robustos y eficientes utilizando Node.js como entorno de ejecución y Express como framework para construir aplicaciones web y APIs.
+
+Sequelize: Mi experiencia con Sequelize abarca la interacción con bases de datos relacionales, proporcionando un modelado eficiente y facilitando operaciones CRUD.
+
+MongoDB y Mongoose: He trabajado con bases de datos NoSQL, especialmente MongoDB, aprovechando Mongoose para modelar y gestionar datos de manera eficiente.
+
+PostgreSQL y MySQL: Tengo experiencia sólida en el diseño y la administración de bases de datos relacionales utilizando PostgreSQL y MySQL.</p> 
+<div className='skillFront'> 
+          {Nback?.map((u) => (
+    <div  className='imagenConNombre'>
+      <p className='nombreImagen'>{u}</p>
+    </div>
+  ))}
+          </div>     
         </div>
         <div id='contact' className='sectionContact' >
+          <img src={olass} alt="" />
           <div>
           <h2 className='titlecontact'>CONTACT</h2>
           </div>
@@ -143,6 +152,7 @@ function App() {
 </div>
           </div>
         </div>
+    
     </div>
   );
 }

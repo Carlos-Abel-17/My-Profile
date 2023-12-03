@@ -16,6 +16,7 @@ import cvPDF from './CV/Aguado_Ramos_Abel_CV (4).pdf'
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose']
   const NFront=['Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
+  const Lenjuages=['Javascript','Typescript']
   
   const descargarCV = () => {
     // Lógica para descargar el archivo CV
@@ -124,6 +125,20 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
     </div>
   ))}
           </div>     
+  <div>
+    <h3 className='frontend'>PROGRAMMING LANGUAGES</h3>
+  </div>
+  <p  style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>I have advanced knowledge in javascript, intermediate in typescript, currently I am learning C# and PHP.</p>
+  <div className='skillFront'>
+    {
+      Lenjuages?.map((u)=>(
+        <div className='imagenConNombre'>
+        <p className='nombreImagen'>{u}</p>
+        </div>
+      ))
+    }
+
+  </div>
         </div>
         <div id='Proyects' className='sectionProyect'>
           <img src={olass} alt=""  className='olas'/>
@@ -181,7 +196,7 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
           </div>
           <div>
           <div className="card">
-  {/* <a className="social-link1" href='https://github.com/Carlos-Abel-17' target="_blank">
+  <a className="social-link1" href='https://github.com/Carlos-Abel-17' target="_blank">
   <img src={github} alt="" className="bi bi-instagram"/>
   </a>
   <a className="social-link2" href='www.linkedin.com/in/abel-aguado-ramos-37377027b' target="_blank">
@@ -192,7 +207,7 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
   </a>
    <a className="social-link2"  href="https://www.facebook.com/profile.php?id=100023392873071" target="_blank">
    <img src={fb} alt="" />
-  </a> */}
+  </a>
 </div>
           </div>
         </div>

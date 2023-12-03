@@ -7,7 +7,11 @@ body {
   html{
     scroll-behavior: smooth;
   }
- 
+ h2,h1, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
+ }
   .navInter{
    display: flex;
     align-items: center;
@@ -175,7 +179,7 @@ body {
   margin: 0.5em;
   background-color: rgb(122, 122, 247);
   border-radius: 1em;
-  padding: 0em 0.5em;
+  padding: 1em 1em;
   min-width: 4em;
   min-height: 1em;
   transition: transform 0.3s ease;
@@ -192,6 +196,46 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.sectionProyect{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cajaProyectos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icons{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+.Theicons{
+ margin: 0.1em;
+ transition:  0.5s ease;
+ background-color: transparent;
+ border: none;
+}
+.gr{
+  padding: 0.3em;
+}
+.Theicons :hover{
+background-color: #363331;
+border-radius: 50%;
+cursor: pointer;
+}
+.proyectt{
+  margin: 1em 2em ;
+  max-width:30em ;
+ display: flex;
+ flex-direction: column;
+ padding: 1em;
+ align-items: center;
+ background: linear-gradient(to right, rgba(31, 31, 31, 0.9), hsl(0, 0%, 2%));
 }
 .titlecontact{
   font-family: sans-serif;

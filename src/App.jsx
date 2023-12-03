@@ -9,11 +9,12 @@ import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
 import fb from './img/fb.svg'
 import descarga from './img/descarga.svg'
-
-import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
+import githubcard from './img/githubs.svg'
+import linkss from './img/enlacess.svg'
+import cvPDF from './CV/Aguado_Ramos_Abel_CV (4).pdf'
 
 function App() {
-  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','sql','mongoDB','mongoo']
+  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose']
   const NFront=['Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
   
   const descargarCV = () => {
@@ -113,15 +114,9 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
    </div>
      <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>
       <span style={{color:'white',fontFamily:'sans-serif'}}>
-     Tecnologías y Frameworks:
+      Technologies and Frameworks:
       </span>
-Node.js y Express: He desarrollado servidores robustos y eficientes utilizando Node.js como entorno de ejecución y Express como framework para construir aplicaciones web y APIs.
-
-Sequelize: Mi experiencia con Sequelize abarca la interacción con bases de datos relacionales, proporcionando un modelado eficiente y facilitando operaciones CRUD.
-
-MongoDB y Mongoose: He trabajado con bases de datos NoSQL, especialmente MongoDB, aprovechando Mongoose para modelar y gestionar datos de manera eficiente.
-
-PostgreSQL y MySQL: Tengo experiencia sólida en el diseño y la administración de bases de datos relacionales utilizando PostgreSQL y MySQL.</p> 
+      Node.js and Express: I have developed robust and efficient servers using Node.js as runtime environment and Express as framework to build web applications and APIs. Sequelize: My experience with Sequelize covers interaction with relational databases, providing efficient modeling and facilitating CRUD operations. MongoDB and Mongoose: I have worked with NoSQL databases, especially MongoDB, leveraging Mongoose to efficiently model and manage data. PostgreSQL and MySQL: I have solid experience in relational database design and administration using PostgreSQL and MySQL.</p> 
 <div className='skillFront'> 
           {Nback?.map((u) => (
     <div  className='imagenConNombre'>
@@ -130,14 +125,63 @@ PostgreSQL y MySQL: Tengo experiencia sólida en el diseño y la administración
   ))}
           </div>     
         </div>
+        <div id='Proyects' className='sectionProyect'>
+          <img src={olass} alt=""  className='olas'/>
+          <div>
+          <h2 className='titlecontact'>PROYECTS</h2>
+          </div>
+          <div className='cajaProyectos'>
+            <div className='proyectt'>
+              <div className='icons'>
+                  <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
+                <img src={linkss} alt="" className='gr' />
+                  </a>
+                  <a className='Theicons' href='https://github.com/Carlos-Abel-17/Front-end-Arcade-World-Henry' target="_blank">
+                 <img src={githubcard} className='gr' alt=""  />
+                  </a>
+              </div>
+             <h3 style={{margin:'0.5em'}}>ARCADE WORLD</h3>
+             <p>Arcade world is a video game ecommerce, this project lasted 3 weeks.   </p>
+             <br />
+             <p>React+Vite, Javascript, PostgreSQL</p>
+            </div>
+            <div className='proyectt'>
+              <div className='icons'>
+                  {/* <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
+                <img src={linkss} alt="" className='gr' />
+                  </a> */}
+                  <a className='Theicons' href='https://github.com/Angelaguado96/ECOOMER-LEALEY' target="_blank">
+                 <img src={githubcard} className='gr' alt=""  />
+                  </a>
+              </div>
+             <h3 style={{margin:'0.5em'}}>QHAPAQ P'ACHA</h3>
+             <p>qhapaq p'acha in an ecommerce of Peruvian Andean Clothing that is still in production. </p>
+             <br />
+             <p>Next.js, Javascript, PostgreSQL </p>
+            </div>
+            <div className='proyectt'>
+              <div className='icons'>
+                  {/* <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
+                <img src={linkss} alt="" className='gr' />
+                  </a> */}
+                  <a className='Theicons' href='https://github.com/Carlos-Abel-17/Back-end-typescript' target="_blank">
+                 <img src={githubcard} className='gr' alt=""  />
+                  </a>
+              </div>
+             <h3 style={{margin:'0.5em'}}>BACKEND WITH TYPESCRIPT</h3>
+             <p>this is a backend using with main typescript language, this backend has all the CRUD.</p>
+             <br />
+             <p>Node.js, Sequelize, Express, typescript,Eslint</p>
+            </div>
+          </div>  
+        </div>
         <div id='contact' className='sectionContact' >
-          <img src={olass} alt="" />
           <div>
           <h2 className='titlecontact'>CONTACT</h2>
           </div>
           <div>
           <div className="card">
-  <a className="social-link1" href='https://github.com/Carlos-Abel-17' target="_blank">
+  {/* <a className="social-link1" href='https://github.com/Carlos-Abel-17' target="_blank">
   <img src={github} alt="" className="bi bi-instagram"/>
   </a>
   <a className="social-link2" href='www.linkedin.com/in/abel-aguado-ramos-37377027b' target="_blank">
@@ -148,7 +192,7 @@ PostgreSQL y MySQL: Tengo experiencia sólida en el diseño y la administración
   </a>
    <a className="social-link2"  href="https://www.facebook.com/profile.php?id=100023392873071" target="_blank">
    <img src={fb} alt="" />
-  </a>
+  </a> */}
 </div>
           </div>
         </div>

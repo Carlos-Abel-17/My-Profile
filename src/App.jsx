@@ -11,7 +11,7 @@ import fb from './img/fb.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
-import cvPDF from './CV/Aguado_Ramos_Abel_CV (4).pdf'
+import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
 
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose']
@@ -38,6 +38,7 @@ function App() {
             <a href="#about"  id='link'>ABOUT</a>
             <a href="#skills" id='link'>SKILLS</a>
             <a href="#contact"  id='link'>CONTACT</a>
+            <a href="#Proyects" id='link'>Proyect</a>
           </div>
         </div>
       </nav>

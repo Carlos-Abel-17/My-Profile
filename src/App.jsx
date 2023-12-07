@@ -189,6 +189,17 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
              <br />
              <p>Node.js, Sequelize, Express, typescript,Eslint</p>
             </div>
+            <div className='proyectt'>
+              <div className='icons'>
+                  <a className='Theicons' href='https://github.com/Carlos-Abel-17/Back-end-typescript' target="_blank">
+                 <img src={githubcard} className='gr' alt=""  />
+                  </a>
+              </div>
+             <h3 style={{margin:'0.5em'}}> PROYECT LARAVEL-9</h3>
+             <p>Is a small application with all the backend CRUD, an html structure and tailwind css styles. </p>
+             <br />
+             <p>Laravel-9, eloquent, laragon,PHP,Tailwind</p>
+            </div>
           </div>  
         </div>
         <div id='contact' className='sectionContact' >

@@ -14,7 +14,7 @@ import linkss from './img/enlacess.svg'
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
 
 function App() {
-  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose']
+  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent']
   const NFront=['Laravel','Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
   const Lenjuages=['Javascript','Typescript','PHP']
   

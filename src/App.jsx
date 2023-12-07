@@ -191,7 +191,7 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
             </div>
             <div className='proyectt'>
               <div className='icons'>
-                  <a className='Theicons' href='https://github.com/Carlos-Abel-17/Back-end-typescript' target="_blank">
+                  <a className='Theicons' href='https://github.com/Carlos-Abel-17/Proyecto-laravel9' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
                   </a>
               </div>

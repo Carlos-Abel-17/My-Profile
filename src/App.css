@@ -71,6 +71,7 @@ body {
 backdrop-filter: blur(50px);
   width: 29em;
   border-radius: 2em;
+  flex-wrap: wrap;
 
 }
 .themodal{

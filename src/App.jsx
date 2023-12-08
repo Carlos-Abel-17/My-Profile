@@ -1,9 +1,9 @@
 import React,{useState} from 'react';
 import './App.css';
 import photoPrefil from './perfiles.jpg';
+
 import ola from './img/waves.svg'
 import olass from './img/wavess.svg'
-
 import github from './img/github.svg'
 import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
@@ -13,9 +13,11 @@ import iconImage from './img/iconImage.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
+
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
-import Modal from './modal';
 import arcedeusers from './imgProyect/arcadeusers.jpeg'
+
+import Modal from './modal';
 
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent']

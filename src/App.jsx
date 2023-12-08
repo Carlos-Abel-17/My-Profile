@@ -185,7 +185,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   </a>
               </div>
              <h3 style={{margin:'0.5em'}}>ARCADE WORLD</h3>
-             <p>Arcade world is a video game ecommerce, this project lasted 3 weeks.   </p>
+             <p>Arcade world es un ecommerce de videojuegos, este proyecto duró 3 semanas.  </p>
              <br />
              <p>React+Vite, Javascript, PostgreSQL</p>
              <br />
@@ -201,7 +201,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   </a>
               </div>
              <h3 style={{margin:'0.5em'}}>QHAPAQ P'ACHA</h3>
-             <p>qhapaq p'acha in an ecommerce of Peruvian Andean Clothing that is still in production. </p>
+             <p>qhapaq p'acha en un ecommerce de ropa andina peruana que sigue en producción </p>
              <br />
              <p>Next.js, Javascript, PostgreSQL </p>
              <br />
@@ -217,7 +217,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   </a>
               </div>
              <h3 style={{margin:'0.5em'}}>BACKEND WITH TYPESCRIPT</h3>
-             <p>this is a backend using with main typescript language, this backend has all the CRUD.</p>
+             <p>Este es un backend usando con lenguaje principal typescript, este backend tiene todo el CRUD.</p>
              <br />
              <p>Node.js, Sequelize, Express, typescript,Eslint</p>
             </div>
@@ -228,7 +228,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   </a> 
               </div>
              <h3 style={{margin:'0.5em'}}> PROYECT LARAVEL-9</h3>
-             <p>Is a small application with all the backend CRUD, an html structure and tailwind css styles. </p>
+             <p>Es una pequeña aplicación con todo el backend CRUD, una estructura html y estilos css tailwind. </p>
              <br />
              <p>Laravel-9, eloquent, laragon,PHP,Tailwind</p>
              <br />

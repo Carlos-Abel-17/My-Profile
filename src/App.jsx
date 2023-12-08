@@ -8,6 +8,7 @@ import github from './img/github.svg'
 import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
 import fb from './img/fb.svg'
+import video from './img/video.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
@@ -58,13 +59,15 @@ function App() {
         <div className='t'>
         <img src={photoPrefil} alt="" className='yo'/>
         <div className='descripcion'>
-          <p className='midescripcion'>Hi👋! I'm Carlos Abel Aguado Ramos , a passionate full stack web developer and graduate of the I'm Henry bootcamp. I'm currently in the middle of my Systems Engineering degree, a journey that has provided me with a solid academic foundation.
-  <br/>
-  My main focus is programming, especially with frameworks(React,next,angular) , and I love bringing web pages to life with style libraries . My time at bootcamp has given me solid skills and a project-oriented mindset.
-<br/>
-In my portfolio, you'll find examples of my work, from individual to collaborative projects. I'm excited about web development and am always looking for opportunities to learn and grow in this exciting field.
-<br/>
-Welcome to my digital space! Here you can explore my journey as a developer and discover the creative solutions I've implemented in various projects. </p>
+          <p className='midescripcion'>
+Etiqueta traducida al español:
+¡Hola ! Soy Carlos Abel Aguado Ramos, un apasionado desarrollador web full stack y graduado del bootcamp de I'm Henry. Actualmente estoy cursando la carrera de Ingeniería de Sistemas, un camino que me ha proporcionado una sólida base académica.
+<br />
+Mi principal enfoque es la programación, especialmente con frameworks (React, Next, Angular), y me encanta dar vida a las páginas web con librerías de estilos. Mi tiempo en el bootcamp me ha dado sólidos conocimientos y una mentalidad orientada a proyectos.
+<br />
+En mi portafolio, encontrarás ejemplos de mi trabajo, desde proyectos individuales hasta colaborativos. Me apasiona el desarrollo web y siempre estoy buscando oportunidades para aprender y crecer en este campo tan apasionante.
+<br />
+¡Bienvenido a mi espacio digital! Aquí puedes explorar mi trayectoria como desarrollador y descubrir las soluciones creativas que he implementado en diversos proyectos. </p>
         </div>
       </div>
       <div >
@@ -80,30 +83,41 @@ Welcome to my digital space! Here you can explore my journey as a developer and 
         <div id='skills' className='sectionSkill'>
           <img src={ola} alt="" className='olas' />
           <div>
-        <h2 className='titleSkill'>SKILLS</h2>
+        <h2 className='titleSkill'>SKILLS </h2>
           </div>
+          <br />
           <div >
               <h3 className='frontend' >My Front end skills</h3>
             </div>
-            <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}> <span style={{color:'white',fontFamily:'sans-serif'}}>
-              Frameworks:
-            </span>
-            <br/>
-React: I developed dynamic and efficient applications using React, leveraging its focus on reusable components and efficient state management.
+            <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>
 
-React + Vite: I experimented with combining React and Vite to create modern applications with fast compile time and efficient development.
-
-Angular: My Angular experience includes building robust and scalable applications, leveraging its modular framework and powerful features.
- <br/><br/>
-<span style={{color:'white',fontFamily:'sans-serif'}}>Styles:</span>
+<span style={{color:'white',fontFamily:'sans-serif'}}>
+Frameworks:
+</span>
 <br/>
-Bootstrap: I've designed attractive and responsive interfaces using Bootstrap, leveraging its set of pre-built components and customizability.
 
-Material-UI: I've immersed myself in designing visually appealing applications with Material-UI, following the design principles of Material Design.
+React: Desarrollé aplicaciones dinámicas y eficientes utilizando React, aprovechando su enfoque en componentes reutilizables y una gestión eficiente del estado.
 
-Tailwind CSS: I experimented with Tailwind CSS to create highly customizable styles and optimize CSS file sizes, providing a faster loading experience.
+React + Vite: Experimenté con la combinación de React y Vite para crear aplicaciones modernas con tiempos de compilación rápidos y un desarrollo eficiente.
 
-Next.js and UI: I used Next.js and its server-side rendering capabilities, along with UI libraries such as Chakra UI, to create modern and efficient web applications.</p>
+Angular: Mi experiencia con Angular incluye la construcción de aplicaciones robustas y escalables, aprovechando su marco modular y sus poderosas funciones.
+
+<br/><br/>
+
+<span style={{color:'white',fontFamily:'sans-serif'}}>
+Estilos:
+</span>
+<br/>
+
+Bootstrap: He diseñado interfaces atractivas y responsivas utilizando Bootstrap, aprovechando su conjunto de componentes preconstruidos y su capacidad de personalización.
+
+Material-UI: Me he sumergido en el diseño de aplicaciones visualmente atractivas con Material-UI, siguiendo los principios de diseño de Material Design.
+
+Tailwind CSS: Experimenté con Tailwind CSS para crear estilos altamente personalizables y optimizar el tamaño de los archivos CSS, proporcionando una experiencia de carga más rápida.
+
+Next.js y UI: Utilicé Next.js y sus capacidades de renderizado del lado del servidor, junto con bibliotecas de UI como Chakra UI, para crear aplicaciones web modernas y eficientes.
+
+</p>
           <div className='skillFront'> 
           {NFront?.map((u) => (
     <div  className='imagenConNombre'>
@@ -114,11 +128,12 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
    <div>
     <h3 className='frontend'>My Back skills</h3>
    </div>
-     <p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>
-      <span style={{color:'white',fontFamily:'sans-serif'}}>
-      Technologies and Frameworks:
-      </span>
-      Node.js and Express: I have developed robust and efficient servers using Node.js as runtime environment and Express as framework to build web applications and APIs. Sequelize: My experience with Sequelize covers interaction with relational databases, providing efficient modeling and facilitating CRUD operations. MongoDB and Mongoose: I have worked with NoSQL databases, especially MongoDB, leveraging Mongoose to efficiently model and manage data. PostgreSQL and MySQL: I have solid experience in relational database design and administration using PostgreSQL and MySQL.</p> 
+    
+<p style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>
+<span style={{color:'white',fontFamily:'sans-serif'}}>
+Tecnologías y Frameworks:
+</span>
+Node.js y Express: He desarrollado servidores robustos y eficientes utilizando Node.js como entorno de ejecución y Express como framework para construir aplicaciones web y APIs. Sequelize: Mi experiencia con Sequelize abarca la interacción con bases de datos relacionales, proporcionando un modelado eficiente y facilitando las operaciones CRUD. MongoDB y Mongoose: He trabajado con bases de datos NoSQL, especialmente MongoDB, aprovechando Mongoose para modelar y administrar datos de manera eficiente. PostgreSQL y MySQL: Tengo una sólida experiencia en el diseño y administración de bases de datos relacionales utilizando PostgreSQL y MySQL.</p> 
 <div className='skillFront'> 
           {Nback?.map((u) => (
     <div  className='imagenConNombre'>
@@ -149,6 +164,9 @@ Next.js and UI: I used Next.js and its server-side rendering capabilities, along
           <div className='cajaProyectos'>
             <div className='proyectt'>
               <div className='icons'>
+                  <a className='Theicons' href="https://www.youtube.com/watch?v=WCt5ddr2Uac&t=118s" target="_blank">
+                    <img src={video} alt="" className='gr' />
+                  </a>
                   <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
                 <img src={linkss} alt="" className='gr' />
                   </a>

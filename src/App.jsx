@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './App.css';
 import photoPrefil from './perfiles.jpg';
 
@@ -9,16 +9,19 @@ import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
 import fb from './img/fb.svg'
 import video from './img/video.svg'
-import iconImage from './img/iconImage.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
 import arcadeDash from './imgProyect/arcadeDash.jpeg'
+import lealey from './imgProyect/lealey.jpeg'
+import laravelAbout from './imgProyect/laravelAbout.jpeg'
+import laravelBolg from './imgProyect/laravelBolg.jpeg'
+import lealeyT from './imgProyect/lealeyT.jpeg'
 
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
 import arcedeusers from './imgProyect/arcadeusers.jpeg'
 
-import Modal from './modal';
+
 
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent']
@@ -34,11 +37,6 @@ function App() {
     link.click();
     document.body.removeChild(link);
   };
- 
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
 
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
@@ -57,20 +55,20 @@ function App() {
 
       <div id='imagenDeFondo'>
         <div className='overlay'>
-          <h2 className='tituloPresentacion'>Hello. i'm Abel
+          <h2 className='tituloPresentacion'>Hola. Soy Abel
           <br/>
-            <span className='DEv'>Developers Full Stack</span> </h2>
-          <p className='textoPresen'>Hello, I am a full stack developer I have knowledge in frontend and backend. </p>
+            <span className='DEv'>Desarrolladores Full Stack</span> </h2>
+          <p className='textoPresen'>Hola, soy desarrollador full stack tengo conocimientos en frontend y backend. </p>
         </div>
       </div>
 
       <div id='about' className='sectionAbout'>
         <div><h2 className='titleAbout'>ABOUT ME</h2></div>
+        <br />
         <div className='t'>
         <img src={photoPrefil} alt="" className='yo'/>
         <div className='descripcion'>
           <p className='midescripcion'>
-Etiqueta traducida al español:
 ¡Hola ! Soy Carlos Abel Aguado Ramos, un apasionado desarrollador web full stack y graduado del bootcamp de I'm Henry. Actualmente estoy cursando la carrera de Ingeniería de Sistemas, un camino que me ha proporcionado una sólida base académica.
 <br />
 Mi principal enfoque es la programación, especialmente con frameworks (React, Next, Angular), y me encanta dar vida a las páginas web con librerías de estilos. Mi tiempo en el bootcamp me ha dado sólidos conocimientos y una mentalidad orientada a proyectos.
@@ -172,6 +170,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
           <div>
           <h2 className='titlecontact'>PROYECTS</h2>
           </div>
+          <br />
           <div className='cajaProyectos'>
             <div className='proyectt'>
               <div className='icons'>
@@ -184,26 +183,19 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   <a className='Theicons' href='https://github.com/Carlos-Abel-17/Front-end-Arcade-World-Henry' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
                   </a>
-                  <div className='Themodal' >
-      <button onClick={openModal} style={{border:'none',background:'none',display:'flex',alignItems:'center',padding:'0px',margin:'5px'}}> <img src={iconImage}  alt="" className='gr' /></button>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <div className='conteiner_img'>
-      <img src={arcedeusers} alt="" className='imgmodal'/>
-      <img src={arcadeDash} alt="" className='imgmodal'/>
-        </div>
-      </Modal>
-    </div>
               </div>
              <h3 style={{margin:'0.5em'}}>ARCADE WORLD</h3>
              <p>Arcade world is a video game ecommerce, this project lasted 3 weeks.   </p>
              <br />
              <p>React+Vite, Javascript, PostgreSQL</p>
+             <br />
+             <div className='conteiner_img'>
+             <img src={arcedeusers} className='imgmodal' alt="" />
+             <img src={arcadeDash} alt="" className='imgmodal' />
+             </div>
             </div>
             <div className='proyectt'>
               <div className='icons'>
-                  {/* <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
-                <img src={linkss} alt="" className='gr' />
-                  </a> */}
                   <a className='Theicons' href='https://github.com/Angelaguado96/ECOOMER-LEALEY' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
                   </a>
@@ -212,12 +204,14 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
              <p>qhapaq p'acha in an ecommerce of Peruvian Andean Clothing that is still in production. </p>
              <br />
              <p>Next.js, Javascript, PostgreSQL </p>
+             <br />
+             <div className='conteiner_img'>
+             <img src={lealey} className='imgmodal' alt="" />
+             <img src={lealeyT} className='imgmodal' alt="" />
+             </div>
             </div>
             <div className='proyectt'>
               <div className='icons'>
-                  {/* <a className='Theicons' href='https://main--monumental-dragon-891db4.netlify.app/' target="_blank" >
-                <img src={linkss} alt="" className='gr' />
-                  </a> */}
                   <a className='Theicons' href='https://github.com/Carlos-Abel-17/Back-end-typescript' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
                   </a>
@@ -231,12 +225,17 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
               <div className='icons'>
                   <a className='Theicons' href='https://github.com/Carlos-Abel-17/Proyecto-laravel9' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
-                  </a>
+                  </a> 
               </div>
              <h3 style={{margin:'0.5em'}}> PROYECT LARAVEL-9</h3>
              <p>Is a small application with all the backend CRUD, an html structure and tailwind css styles. </p>
              <br />
              <p>Laravel-9, eloquent, laragon,PHP,Tailwind</p>
+             <br />
+             <div className='conteiner_img'>
+             <img src={laravelAbout} className='imgmodal' alt="" />
+             <img src={laravelBolg} className='imgmodal' alt="" />
+             </div>
             </div>
           </div>  
         </div>

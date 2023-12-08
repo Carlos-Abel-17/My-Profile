@@ -73,6 +73,7 @@ backdrop-filter: blur(50px);
   border-radius: 2em;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .themodal{
   margin: 0.1em;
@@ -241,11 +242,12 @@ border-radius: 50%;
 cursor: pointer;
 }
 .proyectt{
-  margin: 1em 2em ;
+  margin: 0.5em 1em ;
   max-width:30em ;
  display: flex;
  flex-direction: column;
  padding: 1em;
+ border-radius: 1em;
  align-items: center;
  background: linear-gradient(to right, rgba(31, 31, 31, 0.9), hsl(0, 0%, 2%));
 }
@@ -394,12 +396,14 @@ cursor: pointer;
 .imgmodal{
   width: 12em;
   margin: 0.1em;
+  border-radius: 0.5em;
 }
 .conteiner_img{
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  
 }
 
 @media (max-width: 768px) {
@@ -460,6 +464,6 @@ cursor: pointer;
   .conteiner_img{
     display: flex;
     flex-direction: column;
-    
+
   }
 }

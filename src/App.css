@@ -72,7 +72,7 @@ backdrop-filter: blur(50px);
   width: 29em;
   border-radius: 2em;
   flex-wrap: wrap;
-
+  align-items: center;
 }
 .themodal{
   margin: 0.1em;
@@ -392,7 +392,8 @@ cursor: pointer;
 }
 
 .imgmodal{
-  width: 7em;
+  width: 12em;
+  margin: 0.1em;
 }
 .conteiner_img{
   width: 100%;
@@ -455,5 +456,10 @@ cursor: pointer;
   }
   .t{
    flex-direction: column;
+  }
+  .conteiner_img{
+    display: flex;
+    flex-direction: column;
+    
   }
 }

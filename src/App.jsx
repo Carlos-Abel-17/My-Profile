@@ -13,6 +13,7 @@ import iconImage from './img/iconImage.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
+import arcadeDash from './imgProyect/arcadeDash.jpeg'
 
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
 import arcedeusers from './imgProyect/arcadeusers.jpeg'
@@ -79,6 +80,7 @@ En mi portafolio, encontrarás ejemplos de mi trabajo, desde proyectos individua
 ¡Bienvenido a mi espacio digital! Aquí puedes explorar mi trayectoria como desarrollador y descubrir las soluciones creativas que he implementado en diversos proyectos. </p>
         </div>
       </div>
+      <br />
       <div >
       <button className="button" onClick={descargarCV} type="button">
   <span className="button__text">CV.pdf</span>
@@ -187,6 +189,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className='conteiner_img'>
       <img src={arcedeusers} alt="" className='imgmodal'/>
+      <img src={arcadeDash} alt="" className='imgmodal'/>
         </div>
       </Modal>
     </div>

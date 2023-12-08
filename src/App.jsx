@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import photoPrefil from './perfiles.jpg';
 import ola from './img/waves.svg'
@@ -9,10 +9,13 @@ import linkedin from './img/linkedin.svg'
 import wsp from './img/wsp.svg'
 import fb from './img/fb.svg'
 import video from './img/video.svg'
+import iconImage from './img/iconImage.svg'
 import descarga from './img/descarga.svg'
 import githubcard from './img/githubs.svg'
 import linkss from './img/enlacess.svg'
 import cvPDF from './CV/Aguado_Ramos_Abel_CV.pdf'
+import Modal from './modal';
+import arcedeusers from './imgProyect/arcadeusers.jpeg'
 
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent']
@@ -29,6 +32,10 @@ function App() {
     document.body.removeChild(link);
   };
  
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
 
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
@@ -173,6 +180,14 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
                   <a className='Theicons' href='https://github.com/Carlos-Abel-17/Front-end-Arcade-World-Henry' target="_blank">
                  <img src={githubcard} className='gr' alt=""  />
                   </a>
+                  <div className='Themodal' >
+      <button onClick={openModal} style={{border:'none',background:'none',display:'flex',alignItems:'center',padding:'0px',margin:'5px'}}> <img src={iconImage}  alt="" className='gr' /></button>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <div className='conteiner_img'>
+      <img src={arcedeusers} alt="" className='imgmodal'/>
+        </div>
+      </Modal>
+    </div>
               </div>
              <h3 style={{margin:'0.5em'}}>ARCADE WORLD</h3>
              <p>Arcade world is a video game ecommerce, this project lasted 3 weeks.   </p>

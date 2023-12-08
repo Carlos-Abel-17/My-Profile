@@ -73,6 +73,17 @@ backdrop-filter: blur(50px);
   border-radius: 2em;
 
 }
+.themodal{
+  margin: 0.1em;
+  transition:  0.5s ease;
+  background-color: transparent;
+  border: none;
+}
+.themodal:hover{
+  background-color: #363331;
+border-radius: 50%;
+cursor: pointer;
+}
 .yo{
   width: 20%;
   height: 30vh;
@@ -378,6 +389,17 @@ cursor: pointer;
  display: flex;
  align-items: center;
 }
+
+.imgmodal{
+  width: 7em;
+}
+.conteiner_img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 @media (max-width: 768px) {
   .yo {
     width: 35%; 

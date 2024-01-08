@@ -24,9 +24,9 @@ import arcedeusers from './imgProyect/arcadeusers.jpeg'
 
 
 function App() {
-  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent']
+  const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent','Web Api .Net']
   const NFront=['Laravel','Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
-  const Lenjuages=['Javascript','Typescript','PHP']
+  const Lenjuages=['Javascript','Typescript','PHP','C#']
   
   const descargarCV = () => {
     // Lógica para descargar el archivo CV

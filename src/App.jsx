@@ -25,14 +25,14 @@ import arcedeusers from './imgProyect/arcadeusers.jpeg'
 
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent','Web Api .Net']
-  const NFront=['Laravel','Bootstap','Material-UI','React','Vite','Tailwindcss','Nextjs','chakra-UI','chart.js','apex chart.js']
+  const NFrontStyle=['Bootstap','Material-UI','Tailwindcss','chakra-UI','chart.js','apex chart.js']
+  const NFrontFramework=['Laravel','React','Vite','Nextjs','Angular']
   const Lenjuages=['Javascript','Typescript','PHP','C#']
   
   const descargarCV = () => {
-    // Lógica para descargar el archivo CV
     const link = document.createElement('a');
-    link.href = cvPDF; // Reemplaza con la ruta correcta a tu archivo CV
-    link.download = 'Mi_CV_Abel_Aguado.pdf'; // Puedes establecer el nombre de descarga
+    link.href = cvPDF; 
+    link.download = 'Mi_CV_Abel_Aguado.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -112,7 +112,13 @@ React + Vite: Experimenté con la combinación de React y Vite para crear aplica
 Angular: Mi experiencia con Angular incluye la construcción de aplicaciones robustas y escalables, aprovechando su marco modular y sus poderosas funciones.
 
 <br/><br/>
-
+<div className='skillFront'> 
+          {NFrontFramework?.map((u) => (
+    <div  className='imagenConNombre'>
+      <p className='nombreImagen'>{u}</p>
+    </div>
+  ))}
+          </div>
 <span style={{color:'white',fontFamily:'sans-serif'}}>
 Estilos:
 </span>
@@ -128,7 +134,7 @@ Next.js y UI: Utilicé Next.js y sus capacidades de renderizado del lado del ser
 
 </p>
           <div className='skillFront'> 
-          {NFront?.map((u) => (
+          {NFrontStyle?.map((u) => (
     <div  className='imagenConNombre'>
       <p className='nombreImagen'>{u}</p>
     </div>
@@ -153,7 +159,7 @@ Node.js y Express: He desarrollado servidores robustos y eficientes utilizando N
   <div>
     <h3 className='frontend'>PROGRAMMING LANGUAGES</h3>
   </div>
-  <p  style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>I have advanced knowledge in javascript, intermediate in typescript, currently I am learning C# and PHP.</p>
+  <p  style={{fontFamily:'sans-serif',color:'#9c9c9c',padding:'2em'}}>Tengo conocimientos avanzados en javascript, intermedios en typescript, actualmente estoy aprendiendo C# y PHP.</p>
   <div className='skillFront'>
     {
       Lenjuages?.map((u)=>(

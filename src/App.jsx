@@ -23,11 +23,13 @@ import arcedeusers from './imgProyect/arcadeusers.jpeg'
 
 
 
+
+
 function App() {
   const Nback=['Mysql','Node.js','Postgresql','Prisma','Sequelize','SQL','mongoDB','mongoose','Eloquent','Web Api .Net']
   const NFrontStyle=['Bootstap','Material-UI','Tailwindcss','chakra-UI','chart.js','apex chart.js']
   const NFrontFramework=['Laravel','React','Vite','Nextjs','Angular']
-  const Lenjuages=['Javascript','Typescript','PHP','C#']
+  const Lenjuages=['Javascript','Typescript','PHP','.NETcore']
   
   const descargarCV = () => {
     const link = document.createElement('a');
@@ -44,10 +46,10 @@ function App() {
       <nav className={`nav`}>
         <div className='navInter'>
           <div className='enlaces'>
-            <a href="#about"  id='link'>ABOUT</a>
-            <a href="#skills" id='link'>SKILLS</a>
-            <a href="#Proyects" id='link'>PROYECTS</a>
-            <a href="#contact"  id='link'>CONTACT</a>
+            <a href="#about"  id='link'>Sobre mi</a>
+            <a href="#skills" id='link'>Habilidades</a>
+            <a href="#Proyects" id='link'>Proyectos</a>
+            <a href="#contact"  id='link'>Contacto</a>
           </div>
         </div>
       </nav>
@@ -55,7 +57,8 @@ function App() {
 
       <div id='imagenDeFondo'>
         <div className='overlay'>
-          <h2 className='tituloPresentacion'>Hola. Soy Abel
+         
+          <h2 className='tituloPresentacion'>Hola, Soy Abel
           <br/>
             <span className='DEv'>Desarrolladores Full Stack</span> </h2>
           <p className='textoPresen'>Hola, soy desarrollador full stack tengo conocimientos en frontend y backend. </p>
@@ -63,7 +66,7 @@ function App() {
       </div>
 
       <div id='about' className='sectionAbout'>
-        <div><h2 className='titleAbout'>ABOUT ME</h2></div>
+        <div><h2 className='titleAbout'>Sobre mi </h2></div>
         <br />
         <div className='t'>
         <img src={photoPrefil} alt="" className='yo'/>

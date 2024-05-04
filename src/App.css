@@ -12,15 +12,43 @@ body {
   color: white;
   margin:0;
  }
-  .navInter{
+ .navbar{
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  animation: headerAnimation linear both;
+  animation-timeline:scroll(root);
+  animation-range: 0 200px;
+ }
+ .enlaces{
+  width: auto;
    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: sans-serif;
-  
-   
+   font-family: sans-serif;
+   justify-content: center;
   }
+  li{
+   list-style: none;
+   padding: 1rem;
+  }
+#link{
+  margin: 3%;
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  font-weight: 900
+ 
+}
+@keyframes headerAnimation{
+  to{
+ background-color: #146c54;
+ backdrop-filter: blur(5px);
+ font-size: 20px;
+ color: red;
+  }
+}
   .title{
     font-size: larger;
   }
@@ -57,22 +85,8 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
-#link{
-  margin: 3%;
-  text-decoration: none;
-  color: white;
-  font-size: medium;
-  font-weight: 900
- 
-}
-.enlaces{
-  display: flex;
-  background-color:#050405 ;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
+
+
 .themodal{
   margin: 0.1em;
   transition:  0.5s ease;
@@ -254,7 +268,7 @@ cursor: pointer;
 @keyframes reavel{
 from{
 opacity: 0;
-translate: 100px 0;
+translate: 50px 0;
 scale: .5;
 }
  to{

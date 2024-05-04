@@ -43,18 +43,17 @@ function App() {
 
   return (
     <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-       <div style={{  width: '100%' }}>
-      <nav className={`nav`}>
-        <div className='navInter'>
-          <div className='enlaces'>
-            <a href="#about"  id='link'>About</a>
-            <a href="#skills" id='link'>Skill</a>
-            <a href="#Proyects" id='link'>Project</a>
-            <a href="#contact"  id='link'>Contact</a>
-          </div>
-        </div>
+    
+      <nav className='navbar' >
+          <ul className='enlaces'>
+            <li><a href="#about"  id='link'>About</a></li>
+            <li><a href="#skills" id='link'>Skill</a></li>
+            <li> <a href="#Proyects" id='link'>Project</a></li>
+            <li><a href="#contact"  id='link'>Contact</a></li>
+          </ul>
+
       </nav>
-    </div>
+   
 
       <div id='imagenDeFondo'>
         <div className='overlay'>
